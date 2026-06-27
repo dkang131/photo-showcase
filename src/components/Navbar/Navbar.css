@@ -1,0 +1,84 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 60px;
+
+    z-index: 1000;
+
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: blur(12px);
+}
+
+.logo {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.hamburger {
+    font-size: 1rem;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.menu {
+    position: fixed;
+
+    top: 0;
+    left: -280px;
+
+    width: 260px;
+    height: 100vh;
+
+    background: white;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 100px 30px;
+    gap: 20px;
+
+    transition: .35s ease;
+
+    z-index: 1200;
+}
+
+.menu.active {
+    left: 0;
+}
+
+.menu button {
+    background: none;
+    border: none;
+
+    text-align: left;
+
+    font-size: 1.1rem;
+    cursor: pointer;
+
+    transition: .2s;
+}
+
+.menu button:hover {
+    transform: translateX(8px);
+}
+
+.overlay {
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0,0,0,.25);
+
+    z-index: 1100;
+}
