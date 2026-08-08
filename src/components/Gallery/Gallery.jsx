@@ -9,7 +9,7 @@ function Gallery() {
           <article className="gallery-item" key={photo.id}>
             <img
               src={photo.image}
-              alt={photo.title}
+              alt={photo.title}l
               className="gallery-image"
             />
 
